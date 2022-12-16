@@ -1,0 +1,4 @@
+---- Applied Jobs Data ----
+---- Number | Job Title | Company | Location | Work Place | Posted Date | Applications | Result ----
+
+ Category: frontend, Location: India, Applying 1,419 results jobs.

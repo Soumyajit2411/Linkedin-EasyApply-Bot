@@ -1,0 +1,8 @@
+https://www.linkedin.com/jobs/search/?f_AL=true&keywords=frontend&f_JT=F%2CP%2CC&f_WT=1%2C2%2C3&location=India&f_E=2&f_TPR=r604800&f_SB2=3&sortBy=DD
+https://www.linkedin.com/jobs/search/?f_AL=true&keywords=react&f_JT=F%2CP%2CC&f_WT=1%2C2%2C3&location=India&f_E=2&f_TPR=r604800&f_SB2=3&sortBy=DD
+https://www.linkedin.com/jobs/search/?f_AL=true&keywords=typescript&f_JT=F%2CP%2CC&f_WT=1%2C2%2C3&location=India&f_E=2&f_TPR=r604800&f_SB2=3&sortBy=DD
+https://www.linkedin.com/jobs/search/?f_AL=true&keywords=javascript&f_JT=F%2CP%2CC&f_WT=1%2C2%2C3&location=India&f_E=2&f_TPR=r604800&f_SB2=3&sortBy=DD
+https://www.linkedin.com/jobs/search/?f_AL=true&keywords=vue&f_JT=F%2CP%2CC&f_WT=1%2C2%2C3&location=India&f_E=2&f_TPR=r604800&f_SB2=3&sortBy=DD
+https://www.linkedin.com/jobs/search/?f_AL=true&keywords=python&f_JT=F%2CP%2CC&f_WT=1%2C2%2C3&location=India&f_E=2&f_TPR=r604800&f_SB2=3&sortBy=DD
+https://www.linkedin.com/jobs/search/?f_AL=true&keywords=programming&f_JT=F%2CP%2CC&f_WT=1%2C2%2C3&location=India&f_E=2&f_TPR=r604800&f_SB2=3&sortBy=DD
+https://www.linkedin.com/jobs/search/?f_AL=true&keywords=blockchain&f_JT=F%2CP%2CC&f_WT=1%2C2%2C3&location=India&f_E=2&f_TPR=r604800&f_SB2=3&sortBy=DD
