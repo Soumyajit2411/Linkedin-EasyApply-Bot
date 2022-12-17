@@ -1,54 +1,10 @@
 ---- Applied Jobs Data ----
 ---- Number | Job Title | Company | Location | Work Place | Posted Date | Applications | Result ----
 
- Category: frontend, Location: India, Applying 1,419 results jobs.
-
- Category: frontend, Location: India, Applying 1,396 results jobs.
-
- Category: frontend, Location: India, Applying 1,389 results jobs.
-
- Category: frontend, Location: India, Applying 1,394 results jobs.
-
- Category: frontend, Location: India, Applying 1,395 results jobs.
-
- Category: frontend, Location: India, Applying 1,397 results jobs.
-
- Category: frontend, Location: India, Applying 1,396 results jobs.
-
- Category: frontend, Location: India, Applying 1,391 results jobs.
-
- Category: frontend, Location: India, Applying 1,390 results jobs.
-
- Category: frontend, Location: India, Applying 1,392 results jobs.
-
- Category: frontend, Location: India, Applying 1,386 results jobs.
-
- Category: frontend, Location: India, Applying 1,386 results jobs.
-
- Category: frontend, Location: India, Applying 1,384 results jobs.
-
- Category: frontend, Location: India, Applying 1,385 results jobs.
-
- Category: frontend, Location: India, Applying 1,385 results jobs.
-
- Category: frontend, Location: India, Applying 1,381 results jobs.
-
- Category: frontend, Location: India, Applying 1,369 results jobs.
-
- Category: frontend, Location: India, Applying 1,360 results jobs.
-
- Category: frontend, Location: India, Applying 1,358 results jobs.
-
- Category: frontend, Location: India, Applying 1,356 results jobs.
-
- Category: frontend, Location: India, Applying 1,363 results jobs.
-
- Category: frontend, Location: India, Applying 1,360 results jobs.
-
- Category: frontend, Location: India, Applying 1,362 results jobs.
-
- Category: frontend, Location: India, Applying 1,360 results jobs.
-
- Category: frontend, Location: India, Applying 1,359 results jobs.
-
- Category: frontend, Location: India, Applying 1,362 results jobs.
+ Category: frontend, Location: India, Applying 1,317 results jobs.
+1 | Software Engineer | Arcskill | Bengaluru, Karnataka, India | Hybrid | 8 minutes ago |  | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3400580818
+2 | Frontend Developer | Filmboard Movie Technologies Pvt. Ltd. | Pune, Maharashtra, India | On-site | 9 minutes ago |  | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3400584376
+3 | Java Software Engineer | OptimHire | Hyderabad, Telangana, India | On-site | 14 minutes ago |  | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3397614899
+4 | PHP Developer | Houzeo | Thane, Maharashtra, India | On-site | 17 minutes ago |  | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3400578969
+5 | Full Stack Engineer | Berrybeans Technologies Pvt. Ltd | Chennai, Tamil Nadu, India | On-site | 38 minutes ago |  | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3397617099
+6 | PHP Developer | Provis Technologies Private Limited | Jaipur, Rajasthan, India | On-site | 2 hours ago |  | Just Applied to this job: https://www.linkedin.com/jobs/view/3400570466
