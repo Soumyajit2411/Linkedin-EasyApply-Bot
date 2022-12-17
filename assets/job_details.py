@@ -1,22 +1,20 @@
 import config
 from selenium.webdriver.common.by import By
-import linkedin
 
 
 class LinkedinJobDetails:
 
-    def getJobProperties(self, count):
-        self = linkedin.Linkedin()
+    def getJobProperties(self, driver, count: str):
         textToWrite = ""
         jobTitle = ""
         jobCompany = ""
         jobLocation = ""
         jobWOrkPlace = ""
         jobPostedDate = ""
-        jobApplications = ""
+        jobApplication = ""
 
         try:
-            jobTitle = self.driver.find_element(
+            jobTitle = driver.find_element(
                 By.XPATH, "//h1[contains(@class, 'job-title')]").get_attribute(
                     "innerHTML").strip()
             res = [
@@ -24,13 +22,13 @@ class LinkedinJobDetails:
                 if (blItem.lower() in jobTitle.lower())
             ]
             if (len(res) > 0):
-                jobTitle += "(blaclisted title: " + ' '.join(res) + ")"
+                jobTitle += "(blaclisted title)"
         except Exception as e:
             print("Warning in getting jobTitle: " + str(e)[0:50])
             jobTitle = ""
 
         try:
-            jobCompany = self.driver.find_element(
+            jobCompany = driver.find_element(
                 By.XPATH,
                 "//a[contains(@class, 'ember-view t-black t-normal')]"
             ).get_attribute("innerHTML").strip()
@@ -39,20 +37,26 @@ class LinkedinJobDetails:
                 if (blItem.lower() in jobTitle.lower())
             ]
             if (len(res) > 0):
-                jobCompany += "(blaclisted company: " + ' '.join(res) + ")"
+                jobCompany += "(blaclisted company)"
         except Exception as e:
             print("Warning in getting jobCompany: ")
             jobCompany = ""
 
         try:
-            jobLocation = self.driver.find_element(
+            jobLocation = driver.find_element(
                 By.XPATH, "//span[contains(@class, 'bullet')]").get_attribute(
                     "innerHTML").strip()
+            res = [
+                blItem for blItem in config.blackListjobLocations
+                if (blItem.lower() in jobLocation.lower())
+            ]
+            if (len(res) > 0):
+                jobCompany += "(blaclisted location)"
         except Exception as e:
             print("Warning in getting jobLocation: ")
             jobLocation = ""
         try:
-            jobWOrkPlace = self.driver.find_element(
+            jobWOrkPlace = driver.find_element(
                 By.XPATH,
                 "//span[contains(@class, 'workplace-type')]").get_attribute(
                     "innerHTML").strip()
@@ -60,7 +64,7 @@ class LinkedinJobDetails:
             print("Warning in getting jobWorkPlace: ")
             jobWOrkPlace = ""
         try:
-            jobPostedDate = self.driver.find_element(
+            jobPostedDate = driver.find_element(
                 By.XPATH,
                 "//span[contains(@class, 'posted-date')]").get_attribute(
                     "innerHTML").strip()
@@ -68,15 +72,31 @@ class LinkedinJobDetails:
             print("Warning in getting jobPostedDate: ")
             jobPostedDate = ""
         try:
-            jobApplications = self.driver.find_element(
+            jobApplications = driver.find_element(
                 By.XPATH,
                 "//span[contains(@class, 'applicant-count')]").get_attribute(
                     "innerHTML").strip()
+            res = 0
+            jobApplication = noofApplicant(jobApplications)
+            if (int(jobApplication) < int(
+                    config.blackListLimitjobApplications)):
+                res += 1
+            if (int(res) > 0):
+                jobApplication += "(blaclisted applicant limit reached)"
         except Exception as e:
             print("Warning in getting jobApplications: ")
-            jobApplications = ""
+            jobApplication = ""
 
-        textToWrite = str(
-            count
-        ) + " | " + jobTitle + " | " + jobCompany + " | " + jobLocation + " | " + jobWOrkPlace + " | " + jobPostedDate + " | " + jobApplications
+        textToWrite = str(count) + " | " + str(jobTitle) + " | " + str(
+            jobCompany) + " | " + str(jobLocation) + " | " + str(
+                jobWOrkPlace) + " | " + str(jobPostedDate) + " | " + str(
+                    jobApplication)
         return textToWrite
+
+
+def noofApplicant(numOfApplicants: str):
+    if (' ' in numOfApplicants):
+        spaceIndex = numOfApplicants.index(' ')
+        applicants = (numOfApplicants[0:spaceIndex])
+        jobApplication = int(applicants.replace(',', ''))
+        return jobApplication

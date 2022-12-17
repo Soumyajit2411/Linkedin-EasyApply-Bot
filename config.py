@@ -16,4 +16,6 @@ salary = ["$80,000+"]
 sort = ["Recent"]
 blacklistCompanies = []
 blackListTitles = []
-followCompanies = False
+blackListjobLocations = []
+blackListLimitjobApplications = 10
+followCompanies = True
