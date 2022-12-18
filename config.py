@@ -1,4 +1,4 @@
-browser = ["Chrome"]
+browser = ["Firefox"]
 email = "soumyajitroy2411@gmail.com"
 password = "soumyajit2411#"
 chromeProfilePath = r""
@@ -19,3 +19,4 @@ blackListTitles = []
 blackListjobLocations = []
 blackListLimitjobApplications = 10
 followCompanies = True
+alert = False

@@ -1,6 +1,3 @@
-from typing import List
-
-
 class LinkedinWriteResults:
 
     def displayWriteResults(self, lineToWrite: str):

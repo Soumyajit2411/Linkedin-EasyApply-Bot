@@ -1,20 +1,5 @@
-import math, constants, config
+import math, constants
 from typing import List
-from selenium.webdriver.firefox.options import Options
-
-
-def browserOptions():
-    options = Options()
-    options.add_argument("--start-maximized")
-    options.add_argument("--ignore-certificate-errors")
-    options.add_argument('--no-sandbox')
-    options.add_argument("--disable-extensions")
-    options.add_argument('--disable-gpu')
-    options.add_argument("--disable-blink-features")
-    options.add_argument("--disable-blink-features=AutomationControlled")
-    options.add_argument("--incognito")
-    options.add_argument("-profile")
-    return options
 
 
 def urlToKeywords(url: str) -> List[str]:

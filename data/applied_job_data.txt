@@ -1,10 +1,49 @@
 ---- Applied Jobs Data ----
 ---- Number | Job Title | Company | Location | Work Place | Posted Date | Applications | Result ----
 
- Category: frontend, Location: India, Applying 1,317 results jobs.
-1 | Software Engineer | Arcskill | Bengaluru, Karnataka, India | Hybrid | 8 minutes ago |  | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3400580818
-2 | Frontend Developer | Filmboard Movie Technologies Pvt. Ltd. | Pune, Maharashtra, India | On-site | 9 minutes ago |  | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3400584376
-3 | Java Software Engineer | OptimHire | Hyderabad, Telangana, India | On-site | 14 minutes ago |  | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3397614899
-4 | PHP Developer | Houzeo | Thane, Maharashtra, India | On-site | 17 minutes ago |  | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3400578969
-5 | Full Stack Engineer | Berrybeans Technologies Pvt. Ltd | Chennai, Tamil Nadu, India | On-site | 38 minutes ago |  | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3397617099
-6 | PHP Developer | Provis Technologies Private Limited | Jaipur, Rajasthan, India | On-site | 2 hours ago |  | Just Applied to this job: https://www.linkedin.com/jobs/view/3400570466
+ Category: frontend, Location: India, Applying 1,281 results jobs.
+1 | Specialist – PHP Development | Nucore Software Solutions | Kozhikode, Kerala, India | Hybrid | 4 days ago | 33 | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3393876467
+2 | Dotnet Developer |  | Jaipur, Rajasthan, India | On-site | 7 minutes ago |  | Just Applied to this job: https://www.linkedin.com/jobs/view/3401119223
+3 | Back End Developer | ROKiT Games | India | Remote | 15 minutes ago |  | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3397631816
+4 | Frontend Developer | Technfest | Mumbai, Maharashtra, India | Hybrid | 20 minutes ago |  | Just Applied to this job: https://www.linkedin.com/jobs/view/3401116822
+5 | Oracle Service Cloud CRM (B2C) : Contract role | Pinakin-Kantha | India | Remote | 22 minutes ago |  | Cannot apply to this Job! https://www.linkedin.com/jobs/view/3401115907
+6 | Software Engineer | IT Company | Tamil Nadu, India | On-site | 25 minutes ago |  | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3397629741
+9 | Frontend Developer | Cognizech Consulting | Bengaluru, Karnataka, India | On-site | 42 minutes ago | 11 | Just Applied to this job: https://www.linkedin.com/jobs/view/3397635004
+10 | PHP Developer | Banao Technologies | India | Remote | 1 hour ago |  | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3397632501
+11 | Dotnet Developer | Napra consultancy | Chennai, Tamil Nadu, India | On-site | 1 hour ago |  | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3397628669
+12 | Java Developer | OptimHire | New Delhi, Delhi, India | On-site | 1 hour ago |  | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3397630639
+13 | Dotnet Developer |  | Chennai, Tamil Nadu, India | Hybrid | 1 hour ago |  | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3397634184
+14 | Software Engineer (Frontend) | KoinBasket | Bengaluru, Karnataka, India | Hybrid | 1 hour ago | 28 | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3397633087
+15 | Dotnet Developer |  | Hyderabad, Telangana, India | On-site | 2 hours ago |  | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3361655774
+16 | React Native Developer | Gencosys | India | Remote | 2 hours ago | 17 | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3397624700
+17 | Frontend Developer | OptimHire | Mumbai, Maharashtra, India | On-site | 2 hours ago | 36 | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3397623875
+18 | Web Developer | SARIKA HR SOLUTIONS | Mohali district, Punjab, India | On-site | 2 hours ago |  | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3400582012
+19 | Angular Developer | Mspire HR Solutions (Unit of Mspire Ventures Private Limited) | Ahmedabad, Gujarat, India | On-site | 3 hours ago |  | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3400588381
+20 | Java Developer | Myself | India | Remote | 3 hours ago | 45 | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3397619877
+21 | Java Software Engineer | OptimHire | Hyderabad, Telangana, India | On-site | 3 hours ago | 33 | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3397614899
+22 | PHP Developer | Houzeo | Thane, Maharashtra, India | On-site | 3 hours ago |  | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3400578969
+23 | Full Stack Engineer | Berrybeans Technologies Pvt. Ltd | Chennai, Tamil Nadu, India | On-site | 3 hours ago |  | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3397617099
+24 | Dotnet Developer | EDUTECHEX GLOBAL | Hyderabad, Telangana, India | On-site | 4 hours ago |  | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3397617694
+25 | Full stack Developer (Node JS, React JS ) ) | Resource Development Effort Group | Hosur, Tamil Nadu, India | Hybrid | 4 hours ago |  | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3397620041
+26 | React Native Developer | LeagueX | Bengaluru, Karnataka, India | On-site | 4 hours ago | 39 | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3397615913
+27 | Frontend Developer | EDUTECHEX GLOBAL | Hyderabad, Telangana, India | On-site | 4 hours ago | 63 | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3389498195
+28 | PHP Developer | Indianile | Surat, Gujarat, India | On-site | 4 hours ago |  | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3400556594
+29 | Back End Developer | Griffon Technology: A Placement Partner | Hyderabad, Telangana, India | Hybrid | 4 hours ago | 25 | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3400547283
+30 | NodeJS Developer |  | India | Remote | 5 hours ago | 14 | Just Applied to this job: https://www.linkedin.com/jobs/view/3400572414
+31 | Java Software Engineer | Cogent Integrated Business Solutions Inc. | Bengaluru, Karnataka, India | On-site | 5 hours ago | 30 | Pages, couldn't apply to this job! Extra info needed. Link: https://www.linkedin.com/jobs/view/3397608670
+32 | PHP Developer | Provis Technologies Private Limited | Jaipur, Rajasthan, India | On-site | 5 hours ago |  | Just Applied to this job: https://www.linkedin.com/jobs/view/3400569665
+
+ Category: frontend, Location: India, Applying 1,254 results jobs.
+
+ Category: frontend, Location: India, Applying 1,254 results jobs.
+
+ Category: frontend, Location: India, Applying 1,254 results jobs.
+
+ Category: frontend, Location: India, Applying 1,254 results jobs.
+1 | Wordpress Developer | Innomatics Infotech (A trading name of Innomatics UK Ltd) | Indore, Madhya Pradesh, India | Remote | 28 minutes ago |  | Just Applied to this job: https://www.linkedin.com/jobs/view/3404232772
+2 | Java Web Developer | Confidential | Greater Bengaluru Area | On-site | 1 hour ago |  | Just Applied to this job: https://www.linkedin.com/jobs/view/3401128356
+3 | Dotnet Developer |  | Bengaluru, Karnataka, India | On-site | 1 hour ago |  | Cannot apply to this Job! https://www.linkedin.com/jobs/view/3397643417
+
+ Category: frontend, Location: India, Applying 1,254 results jobs.
+1 | Wordpress Developer | Innomatics Infotech (A trading name of Innomatics UK Ltd) | Indore, Madhya Pradesh, India | Remote | 32 minutes ago |  | Already applied! Job: https://www.linkedin.com/jobs/view/3404232772
+2 |  |  |  |  |  |  | Already applied! Job: https://www.linkedin.com/jobs/view/3401128356

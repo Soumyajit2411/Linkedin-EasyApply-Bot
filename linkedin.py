@@ -1,42 +1,32 @@
-import time
+import time, constants, config
 import assets.job_details as job_details
+import assets.url.job_url as job_url
+import assets.login as login
 import assets.buttons.next_process as next_process
 import assets.utils as utils
 import assets.url.keyword_url as keyword_url
 import assets.write_results as write_results
 import assets.buttons.easy_apply as easy_apply
-import constants, config
+import assets.alert as alert
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
-from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.support.ui import WebDriverWait
+from webdriver_manager.firefox import GeckoDriverManager
 
 
 class Linkedin:
 
     def __init__(self):
         try:
-            self.driver = webdriver.Chrome(ChromeDriverManager().install())
-            self.driver.get("https://www.linkedin.com/login")
+            if "chrome" in config.browser:
+                self.driver = webdriver.Chrome(ChromeDriverManager().install())
+            else:
+                self.driver = webdriver.Firefox(
+                    executable_path=GeckoDriverManager().install())
+            self.driver.get(constants.home)
         except Exception:
             pass
-        try:
-            self.driver.find_element(
-                By.XPATH, "//*[@id='username']").send_keys(config.email)
-            time.sleep(5)
-            self.driver.find_element(
-                By.XPATH, "//*[@id='password']").send_keys(config.password)
-            time.sleep(5)
-            self.driver.find_element(
-                By.XPATH, "//button[@aria-label='Sign in']").click()
-            time.sleep(10)
-            WebDriverWait(self.driver, 10)
-        except NoSuchElementException:
-            print("Path Not Found!")
-        except:
-            print("Couldnt log in Linkedin.")
-            exit
+        login.LinkedinLogin().Login(self.driver)
 
     def linkJobApply(self):
         countApplied = 0
@@ -56,19 +46,16 @@ class Linkedin:
 
             for page in range(totalPages):
                 currentPageJobs = constants.jobsPerPage * page
-                url = url + "&start=" + str(currentPageJobs)
-                self.driver.get(url)
-                time.sleep(1)
-                offersPerPage = self.driver.find_elements(
-                    By.XPATH, '//li[@data-occludable-job-id]')
+                offersPerPage = alert.LinkedinAlert().jobs_alert(
+                    self.driver, currentPageJobs, url)
                 offerIds = []
                 for offer in offersPerPage:
                     offerId = offer.get_attribute("data-occludable-job-id")
                     offerIds.append(int(offerId.split(":")[-1]))
                 for jobID in offerIds:
-                    offerPage = 'https://www.linkedin.com/jobs/view/' + str(
-                        jobID)
+                    offerPage = constants.view + str(jobID)
                     self.driver.get(offerPage)
+                    job_url.LinkedinJobUrlGenerate().storeJobResults(offerPage)
                     time.sleep(5)
                     countJobs = str(int(countJobs) + 1)
                     jobProperties = job_details.LinkedinJobDetails.getJobProperties(
@@ -97,19 +84,8 @@ class Linkedin:
                                 ).displayWriteResults(lineToWrite)
                             except:
                                 try:
-                                    self.driver.find_element(
-                                        By.XPATH,
-                                        "//button[@aria-label='Continue to next step']"
-                                    ).click()
-                                    time.sleep(5)
-                                    comPercentage = self.driver.find_element(
-                                        By.XPATH, "//span[@role='note']").text
-                                    percenNumber = int(
-                                        comPercentage[0:comPercentage.index("%"
-                                                                            )])
                                     result = next_process.LinkedinNextButtons(
-                                    ).applyProcess(self.driver, percenNumber,
-                                                   offerPage)
+                                    ).applyProcess(self.driver, offerPage)
                                     lineToWrite = jobProperties + " | " + result
                                     write_results.LinkedinWriteResults(
                                     ).displayWriteResults(lineToWrite)
@@ -118,6 +94,11 @@ class Linkedin:
                                         offerPage)
                                     write_results.LinkedinWriteResults(
                                     ).displayWriteResults(lineToWrite)
+                        else:
+                            lineToWrite = jobProperties + " | " + "Already applied! Job: " + str(
+                                offerPage)
+                            write_results.LinkedinWriteResults(
+                            ).displayWriteResults(lineToWrite)
 
 
 start = time.time()

@@ -1,10 +1,21 @@
 import time, math, config
 from selenium.webdriver.common.by import By
+import assets.buttons.questions as questions
 
 
 class LinkedinNextButtons:
 
-    def applyProcess(self, driver, percentage, offerPage):
+    def findPercentage(self, driver):
+        driver.find_element(
+            By.XPATH, "//button[@aria-label='Continue to next step']").click()
+        time.sleep(5)
+        comPercentage = driver.find_element(By.XPATH,
+                                            "//span[@role='note']").text
+        percenNumber = int(comPercentage[0:comPercentage.index("%")])
+        return percenNumber
+
+    def applyProcess(self, driver, offerPage):
+        percentage = self.findPercentage(driver)
         applyPages = math.floor(100 / percentage)
         result = ""
         try:
@@ -13,6 +24,7 @@ class LinkedinNextButtons:
                     By.XPATH,
                     "//button[@aria-label='Continue to next step']").click()
                 time.sleep(1)
+            # questions.LinkedinQuestions().checkboxConfig(driver,applyPages)
 
             driver.find_element(
                 By.XPATH,
