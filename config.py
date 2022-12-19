@@ -1,4 +1,4 @@
-browser = ["Firefox"]
+browser = ["firefox"]
 email = "soumyajitroy2411@gmail.com"
 password = "soumyajit2411#"
 chromeProfilePath = r""

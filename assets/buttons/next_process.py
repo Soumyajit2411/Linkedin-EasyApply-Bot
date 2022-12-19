@@ -19,12 +19,7 @@ class LinkedinNextButtons:
         applyPages = math.floor(100 / percentage)
         result = ""
         try:
-            for pages in range(applyPages - 2):
-                driver.find_element(
-                    By.XPATH,
-                    "//button[@aria-label='Continue to next step']").click()
-                time.sleep(1)
-            # questions.LinkedinQuestions().checkboxConfig(driver,applyPages)
+            questions.LinkedinQuestions().additionalConfig(driver, applyPages)
 
             driver.find_element(
                 By.XPATH,
