@@ -19,23 +19,18 @@ class LinkedinNextButtons:
         applyPages = math.floor(100 / percentage)
         result = ""
         try:
+            questions.LinkedinQuestions().chooseConfig(driver)
             questions.LinkedinQuestions().additionalConfig(driver, applyPages)
-
             driver.find_element(
                 By.XPATH,
                 "//button[@aria-label='Review your application']").click()
-            time.sleep(1)
-
-            if config.followCompanies is False:
-                driver.find_element(
-                    By.XPATH,
-                    "//label[@for='follow-company-checkbox']").click()
-                time.sleep(1)
+            time.sleep(5)
+            questions.LinkedinQuestions().followCompaniesConfig(driver)
 
             driver.find_element(
                 By.XPATH,
                 "//button[@aria-label='Submit application']").click()
-            time.sleep(1)
+            time.sleep(5)
 
             result = "Just Applied to this job: " + str(offerPage)
         except:

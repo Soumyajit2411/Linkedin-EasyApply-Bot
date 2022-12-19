@@ -5,18 +5,19 @@ chromeProfilePath = r""
 
 location = ["India"]
 keywords = [
-    "frontend", "react", "typescript", "javascript", "vue", "python",
-    "programming", "blockchain"
+    "backend", "react", "software", "javascript", "java", "python",
+    "programming", "rpa"
 ]
-experienceLevels = ["Entry level"]
-datePosted = ["Past Week"]
-jobType = ["Full-time", "Part-time", "Contract"]
-remote = ["On-site", "Remote", "Hybrid"]
-salary = ["$80,000+"]
+experienceLevels = ["Entry level", "Internship"]
+datePosted = ["Past month"]
+jobType = ["Part-time", "Internship", "Temporary"]
+remote = ["Remote", "Hybrid"]
+salary = ["$40,000+"]
 sort = ["Recent"]
 blacklistCompanies = []
 blackListTitles = []
 blackListjobLocations = []
 blackListLimitjobApplications = 10
-followCompanies = True
-alert = False
+followCompanies = False
+alert = True
+workAuthorization = "No"
