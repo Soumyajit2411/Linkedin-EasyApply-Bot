@@ -1,4 +1,4 @@
-import time, math, config
+import math
 from selenium.webdriver.common.by import By
 import assets.easy_apply.questions as questions
 import assets.easy_apply.easy_apply_buttons as easy_apply_buttons
