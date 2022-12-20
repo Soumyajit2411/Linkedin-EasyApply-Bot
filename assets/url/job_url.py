@@ -9,15 +9,15 @@ class LinkedinJobUrlGenerate:
     def writeJobResults(self, text: str):
         fileName = "job_links.txt"
         try:
-            with open("data/" + fileName, encoding="utf-8") as file:
+            with open("downloads/" + fileName, encoding="utf-8") as file:
                 lines = []
                 for line in file:
                     lines.append(line)
-            with open("data/" + fileName, 'w', encoding="utf-8") as f:
+            with open("downloads/" + fileName, 'w', encoding="utf-8") as f:
                 for line in lines:
                     f.write(line)
                 f.write(text + "\n")
 
         except:
-            with open("data/" + fileName, 'w', encoding="utf-8") as f:
+            with open("downloads/" + fileName, 'w', encoding="utf-8") as f:
                 f.write(text + "\n")

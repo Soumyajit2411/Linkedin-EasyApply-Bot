@@ -24,3 +24,6 @@ blackListLimitjobApplications = 10
 followCompanies = False
 alert = True
 workAuthorization = "No"
+defaultInput = "1"
+defaultCheck = "Yes"
+defaultRadio = "1"

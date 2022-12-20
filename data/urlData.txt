@@ -1,8 +1,0 @@
-https://www.linkedin.com/jobs/search/?f_AL=true&keywords=backend&f_JT=P%2CT&f_WT=2%2C3&location=India&f_E=2%2C1f_SB2=1&sortBy=DD
-https://www.linkedin.com/jobs/search/?f_AL=true&keywords=react&f_JT=P%2CT&f_WT=2%2C3&location=India&f_E=2%2C1f_SB2=1&sortBy=DD
-https://www.linkedin.com/jobs/search/?f_AL=true&keywords=software&f_JT=P%2CT&f_WT=2%2C3&location=India&f_E=2%2C1f_SB2=1&sortBy=DD
-https://www.linkedin.com/jobs/search/?f_AL=true&keywords=javascript&f_JT=P%2CT&f_WT=2%2C3&location=India&f_E=2%2C1f_SB2=1&sortBy=DD
-https://www.linkedin.com/jobs/search/?f_AL=true&keywords=java&f_JT=P%2CT&f_WT=2%2C3&location=India&f_E=2%2C1f_SB2=1&sortBy=DD
-https://www.linkedin.com/jobs/search/?f_AL=true&keywords=python&f_JT=P%2CT&f_WT=2%2C3&location=India&f_E=2%2C1f_SB2=1&sortBy=DD
-https://www.linkedin.com/jobs/search/?f_AL=true&keywords=programming&f_JT=P%2CT&f_WT=2%2C3&location=India&f_E=2%2C1f_SB2=1&sortBy=DD
-https://www.linkedin.com/jobs/search/?f_AL=true&keywords=rpa&f_JT=P%2CT&f_WT=2%2C3&location=India&f_E=2%2C1f_SB2=1&sortBy=DD

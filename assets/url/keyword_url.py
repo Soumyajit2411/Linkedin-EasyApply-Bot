@@ -3,10 +3,10 @@ import constants, config,os
 class LinkedinUrlGenerate:
 
     def generateUrls(self):
-        if not os.path.exists('data'):
-            os.makedirs('data')
+        if not os.path.exists('downloads'):
+            os.makedirs('downloads')
         try:
-            with open('data/urlData.txt', 'w', encoding="utf-8") as file:
+            with open('downloads/urlData.txt', 'w', encoding="utf-8") as file:
                 linkedinJobLinks = self.generateUrlLinks()
                 for url in linkedinJobLinks:
                     file.write(url + "\n")

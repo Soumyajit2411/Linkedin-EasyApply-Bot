@@ -39,7 +39,7 @@ class LinkedinQuestions:
             i = 1
             for question in questions:
                 questionno = question.get_attribute("innerHTML")
-                q = "Yes"
+                q = str(config.defaultCheck)
                 for x in checkboxData.keys():
                     if x.lower() in str(questionno).lower():
                         q = checkboxData[x]
@@ -69,7 +69,7 @@ class LinkedinQuestions:
                     i) + "]"
                 ko = driver.find_element(By.XPATH, souki).is_displayed()
                 if str(ko) in "True":
-                    q = "1"
+                    q = str(config.defaultInput)
                     for x in inputFieldsData.keys():
                         if x.lower() in str(questionno).lower():
                             if type(inputFieldsData[x]) is dict:
@@ -99,7 +99,7 @@ class LinkedinQuestions:
             i = 1
             for question in questions:
                 questionno = question.get_attribute("innerHTML")
-                q = "Yes"
+                q = str(config.defaultRadio)
                 for x in radioButtonData.keys():
                     if x.lower() in str(questionno).lower():
                         q = radioButtonData[x]
