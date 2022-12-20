@@ -22,6 +22,15 @@ class LinkedinQuestions:
                 pass
             try:
                 driver.find_element(By.XPATH,
+                                    "//h3[contains(.,'Domande aggiuntive')]")
+                time.sleep(1)
+                self.radioButtonConfig(driver)
+                self.inputFieldConfig(driver)
+                self.checkboxConfig(driver)
+            except NoSuchElementException:
+                pass
+            try:
+                driver.find_element(By.XPATH,
                                     "//h3[contains(.,'Work authorization')]")
                 time.sleep(1)
                 self.workAuthorizationConfig(driver)

@@ -1,6 +1,5 @@
 import time, config
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import NoSuchElementException
 
 
@@ -16,8 +15,7 @@ class LinkedinLogin:
             time.sleep(5)
             driver.find_element(By.XPATH,
                                 "//button[@aria-label='Sign in']").click()
-            time.sleep(15)
-            WebDriverWait(driver, 15)
+            time.sleep(10)
         except NoSuchElementException:
             print("Path Not Found!")
         except:

@@ -20,8 +20,8 @@ class LinkedinNextButtons:
         try:
             easy_apply_buttons.LinkedinButtons().chooseButtonConfig(driver)
             questions.LinkedinQuestions().additionalConfig(driver, applyPages)
-            easy_apply_buttons.LinkedinButtons().followCompaniesConfig(driver)
             easy_apply_buttons.LinkedinButtons().reviewButtonConfig(driver)
+            easy_apply_buttons.LinkedinButtons().followCompaniesConfig(driver)
             easy_apply_buttons.LinkedinButtons().submitButtonConfig(driver)
             result = "Just Applied to this job: " + str(offerPage)
         except:

@@ -25,5 +25,5 @@ followCompanies = False
 alert = True
 workAuthorization = "No"
 defaultInput = "1"
-defaultCheck = "Yes"
-defaultRadio = "1"
+defaultCheck = "1"
+defaultRadio = "Yes"
