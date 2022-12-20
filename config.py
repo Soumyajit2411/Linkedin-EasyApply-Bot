@@ -1,6 +1,9 @@
+from dotenv import dotenv_values
+
+config = dotenv_values(".env")
 browser = ["firefox"]
-email = "soumyajitroy2411@gmail.com"
-password = "soumyajit2411#"
+email = config['USERNAME']
+password = config['PASSWORD']
 chromeProfilePath = r""
 
 location = ["India"]
