@@ -66,8 +66,8 @@ class Linkedin:
                         write_results.LinkedinWriteResults(
                         ).displayWriteResults(lineToWrite)
                     else:
-                        button = easy_apply_buttons.LinkedinButtons().easyApplyButton(
-                            self.driver)
+                        button = easy_apply_buttons.LinkedinButtons(
+                        ).easyApplyButton(self.driver)
                         if button is not False:
                             button.click()
                             time.sleep(1)
@@ -99,6 +99,7 @@ class Linkedin:
                                 offerPage)
                             write_results.LinkedinWriteResults(
                             ).displayWriteResults(lineToWrite)
+        return
 
 
 start = time.time()
