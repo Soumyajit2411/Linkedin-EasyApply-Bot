@@ -2,11 +2,11 @@ import time, constants, config
 import assets.job_details as job_details
 import assets.url.job_url as job_url
 import assets.login as login
-import assets.buttons.next_process as next_process
+import assets.easy_apply.next_process as next_process
+import assets.easy_apply.easy_apply_buttons as easy_apply_buttons
 import assets.utils as utils
 import assets.url.keyword_url as keyword_url
-import assets.write_results as write_results
-import assets.buttons.easy_apply as easy_apply
+import assets.url.write_results as write_results
 import assets.alert as alert
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -66,7 +66,7 @@ class Linkedin:
                         write_results.LinkedinWriteResults(
                         ).displayWriteResults(lineToWrite)
                     else:
-                        button = easy_apply.LinkedinButtons().easyApplyButton(
+                        button = easy_apply_buttons.LinkedinButtons().easyApplyButton(
                             self.driver)
                         if button is not False:
                             button.click()

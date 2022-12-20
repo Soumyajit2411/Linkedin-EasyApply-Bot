@@ -1,14 +1,13 @@
 import time, math, config
 from selenium.webdriver.common.by import By
-import assets.buttons.questions as questions
+import assets.easy_apply.questions as questions
+import assets.easy_apply.easy_apply_buttons as easy_apply_buttons
 
 
 class LinkedinNextButtons:
 
     def findPercentage(self, driver):
-        driver.find_element(
-            By.XPATH, "//button[@aria-label='Continue to next step']").click()
-        time.sleep(5)
+        easy_apply_buttons.LinkedinButtons().nextButtonConfig(driver)
         comPercentage = driver.find_element(By.XPATH,
                                             "//span[@role='note']").text
         percenNumber = int(comPercentage[0:comPercentage.index("%")])
@@ -19,19 +18,11 @@ class LinkedinNextButtons:
         applyPages = math.floor(100 / percentage)
         result = ""
         try:
-            questions.LinkedinQuestions().chooseConfig(driver)
+            easy_apply_buttons.LinkedinButtons().chooseButtonConfig(driver)
             questions.LinkedinQuestions().additionalConfig(driver, applyPages)
-            driver.find_element(
-                By.XPATH,
-                "//button[@aria-label='Review your application']").click()
-            time.sleep(5)
-            questions.LinkedinQuestions().followCompaniesConfig(driver)
-
-            driver.find_element(
-                By.XPATH,
-                "//button[@aria-label='Submit application']").click()
-            time.sleep(5)
-
+            easy_apply_buttons.LinkedinButtons().followCompaniesConfig(driver)
+            easy_apply_buttons.LinkedinButtons().reviewButtonConfig(driver)
+            easy_apply_buttons.LinkedinButtons().submitButtonConfig(driver)
             result = "Just Applied to this job: " + str(offerPage)
         except:
             result = "Pages, couldn't apply to this job! Extra info needed. Link: " + str(

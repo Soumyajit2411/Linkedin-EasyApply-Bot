@@ -3,24 +3,14 @@ from selenium.webdriver.common.by import By
 import additional_questions
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.ui import Select
+import assets.easy_apply.easy_apply_buttons as easy_apply_buttons
 
 
 class LinkedinQuestions:
 
-    def chooseConfig(self, driver):
-        try:
-            driver.find_element(
-                By.XPATH, "//button[@aria-label='Choose Resume']").click()
-            time.sleep(1)
-        except NoSuchElementException:
-            pass
-
     def additionalConfig(self, driver, applyPages):
         for pages in range(applyPages - 2):
-            driver.find_element(
-                By.XPATH,
-                "//button[@aria-label='Continue to next step']").click()
-            time.sleep(1)
+            easy_apply_buttons.LinkedinButtons().nextButtonConfig(driver)
             try:
                 driver.find_element(
                     By.XPATH, "//h3[contains(.,'Additional Questions')]")
@@ -60,10 +50,9 @@ class LinkedinQuestions:
                 time.sleep(1)
                 i += 1
         except NoSuchElementException:
-            return
+            pass
         except:
             pass
-        return 0
 
     def inputFieldConfig(self, driver):
 
@@ -93,10 +82,9 @@ class LinkedinQuestions:
                     time.sleep(1)
                 i += 1
         except NoSuchElementException:
-            return
+            pass
         except:
             pass
-        return 0
 
     def radioButtonConfig(self, driver):
 
@@ -125,10 +113,9 @@ class LinkedinQuestions:
                 time.sleep(1)
                 i += 1
         except NoSuchElementException:
-            return
+            pass
         except:
             pass
-        return 0
 
     def workAuthorizationConfig(self, driver):
         try:
@@ -138,18 +125,6 @@ class LinkedinQuestions:
                 souki = "//label[@data-test-text-selectable-option__label='No']"
             driver.find_element(By.XPATH, souki).click()
             time.sleep(1)
-        except NoSuchElementException:
-            pass
-        except:
-            pass
-
-    def followCompaniesConfig(self, driver):
-        try:
-            if str(config.followCompanies) in "False":
-                driver.find_element(
-                    By.XPATH,
-                    "//label[@for='follow-company-checkbox']").click()
-                time.sleep(5)
         except NoSuchElementException:
             pass
         except:

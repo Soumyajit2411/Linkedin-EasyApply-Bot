@@ -22,4 +22,4 @@ class LinkedinLogin:
             print("Path Not Found!")
         except:
             print("Couldnt log in Linkedin.")
-            exit
+            driver.close()

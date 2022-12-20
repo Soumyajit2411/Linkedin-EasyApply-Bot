@@ -55,6 +55,7 @@ class LinkedinJobDetails:
         except Exception as e:
             print("Warning in getting jobLocation: ")
             jobLocation = ""
+
         try:
             jobWOrkPlace = driver.find_element(
                 By.XPATH,
@@ -63,6 +64,7 @@ class LinkedinJobDetails:
         except Exception as e:
             print("Warning in getting jobWorkPlace: ")
             jobWOrkPlace = ""
+
         try:
             jobPostedDate = driver.find_element(
                 By.XPATH,
@@ -71,6 +73,7 @@ class LinkedinJobDetails:
         except Exception as e:
             print("Warning in getting jobPostedDate: ")
             jobPostedDate = ""
+
         try:
             jobApplications = driver.find_element(
                 By.XPATH,

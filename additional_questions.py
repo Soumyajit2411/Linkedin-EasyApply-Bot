@@ -26,6 +26,3 @@ class LinkedinAdditionalQuestions:
         except Exception as e:
             print("Error in Parsing yaml : " + str(e))
         return data
-
-
-LinkedinAdditionalQuestions().radioConfigData()

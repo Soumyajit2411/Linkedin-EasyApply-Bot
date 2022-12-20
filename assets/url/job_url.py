@@ -4,7 +4,7 @@ class LinkedinJobUrlGenerate:
         try:
             self.writeJobResults(lineToWrite)
         except Exception as e:
-            print("Error in DisplayJobResults: " + str(e))
+            print("Error in getting JobResults: " + str(e))
 
     def writeJobResults(self, text: str):
         fileName = "job_links.txt"
