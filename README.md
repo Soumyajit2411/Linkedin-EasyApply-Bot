@@ -1,10 +1,13 @@
 ## Installation 🔌
 
-- clone the repo `git clone https://github.com/wodsuz/EasyApplyJobsBot`
+- Clone this github repository `https://github.com/Soumyajit2411/Linkedin-EasyApply-Bot.git`
 - Make sure Python and pip is installed
+- Make sure Chrome or Firefox is installed
 - Install dependencies with `pip3 install -r requirements.yaml`
-- Enter your linkedin credentials on line 8 and 9 of config.py file
-- Either create firefox Profile and put its path on line 8 of config.py or enter your linkedin credentials line 11 and 12 of config.py. - this feature is avalible currently only for Linkedin bot pro members)
+- Create a .env file
+**USERNAME = "[USERNAME]"**
+**PASSWORD = "[PASSWORD]"**
+- Can run this on both chrome and firefox just change line 4 of config.py. 
 - Modify config.py according to your demands.
 - Run `python3 linkedin.py`
-- Check Applied Jobs DATA .txt file is generate under /data folder
+- Check Applied Jobs DATA .txt file is generate under /downloads folder
