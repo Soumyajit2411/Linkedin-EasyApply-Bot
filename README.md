@@ -4,6 +4,7 @@
 - Make sure Python and pip is installed
 - Make sure Chrome or Firefox is installed
 - Install dependencies with `pip3 install -r requirements.yaml`
+- Update python with `pip install --upgrade pip `
 - Create a .env file
 **USERNAME = "[USERNAME]"**
 **PASSWORD = "[PASSWORD]"**
