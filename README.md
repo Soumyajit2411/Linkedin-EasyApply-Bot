@@ -5,8 +5,8 @@
 - Make sure Chrome or Firefox is installed
 - Install dependencies with `pip3 install -r requirements.yaml`
 - Create a .env file
-**USERNAME = "soumyajitroy2411@gmail.com"**
-**PASSWORD = "soumyajit2411#"**
+**USERNAME = "[USERNAME]"**
+**PASSWORD = "[PASSWORD]"**
 - Can run this on both chrome and firefox just change line 4 of config.py. 
 - Modify config.py according to your demands.
 - Run `python3 linkedin.py`
