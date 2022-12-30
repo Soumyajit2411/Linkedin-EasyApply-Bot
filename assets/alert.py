@@ -19,10 +19,8 @@ class LinkedinAlert:
             if str(config.alert) in "True":
                 driver.find_element(By.XPATH,
                                     "//span[contains(.,'Set alert')]").click()
-                time.sleep(0.5)
             else:
                 driver.find_element(By.XPATH,
                                     "//span[contains(.,'Alert on')]").click()
-                time.sleep(0.5)
         except NoSuchElementException:
             pass

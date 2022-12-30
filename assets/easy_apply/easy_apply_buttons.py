@@ -7,9 +7,9 @@ class LinkedinButtons:
 
     def easyApplyButton(self, driver):
         try:
-            time.sleep(2)
             button = driver.find_element(
                 By.XPATH, '//button[contains(@class, "jobs-apply-button")]')
+            time.sleep(1)
             EasyApplyButton = button
         except:
             EasyApplyButton = False
@@ -38,7 +38,7 @@ class LinkedinButtons:
             driver.find_element(
                 By.XPATH,
                 "//button[@aria-label='Review your application']").click()
-            time.sleep(5)
+            time.sleep(1)
         except NoSuchElementException:
             pass
 
@@ -48,7 +48,7 @@ class LinkedinButtons:
                 driver.find_element(
                     By.XPATH,
                     "//label[@for='follow-company-checkbox']").click()
-                time.sleep(5)
+                time.sleep(1)
         except NoSuchElementException:
             pass
 
@@ -57,6 +57,6 @@ class LinkedinButtons:
             driver.find_element(
                 By.XPATH,
                 "//button[@aria-label='Submit application']").click()
-            time.sleep(10)
+            time.sleep(2)
         except NoSuchElementException:
             pass
