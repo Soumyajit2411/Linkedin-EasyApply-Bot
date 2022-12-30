@@ -1,4 +1,4 @@
-## Installation 🔌
+## Instructions Guide 🔌
 
 - Clone this github repository `https://github.com/Soumyajit2411/Linkedin-EasyApply-Bot.git`
 - Make sure Python and pip is installed
