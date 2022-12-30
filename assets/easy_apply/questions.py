@@ -1,4 +1,4 @@
-import time, config
+import time, config, string
 from selenium.webdriver.common.by import By
 import additional_questions
 from selenium.common.exceptions import NoSuchElementException
@@ -76,8 +76,9 @@ class LinkedinQuestions:
                 questionno = question.get_attribute("innerHTML")
                 souki = "(//input[@class=' artdeco-text-input--input'])[" + str(
                     i) + "]"
-                ko = driver.find_element(By.XPATH, souki).is_displayed()
-                if str(ko) in "True":
+                ko = driver.find_element(By.XPATH,
+                                         souki).get_attribute("value")
+                if len(ko) == 0:
                     q = str(config.defaultInput)
                     for x in inputFieldsData.keys():
                         if x.lower() in str(questionno).lower():
