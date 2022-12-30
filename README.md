@@ -10,5 +10,5 @@
 **PASSWORD = "[PASSWORD]"**
 - Can run this on both chrome and firefox just change line 4 of config.py. 
 - Modify config.py according to your demands.
-- Run `python linkedin.py`
+- Run `python linkedin.py` OR `python server.py`
 - Check Applied Jobs DATA .txt file is generate under /downloads folder
