@@ -3,7 +3,7 @@
 - Clone this github repository `https://github.com/Soumyajit2411/Linkedin-EasyApply-Bot.git`
 - Make sure Python and pip is installed
 - Make sure Chrome or Firefox is installed
-- Install dependencies with `pip3 install -r requirements.yaml`
+- Install dependencies with `pip3 install -r requirements.txt`
 - Update python with `pip install --upgrade pip `
 - Create a .env file
 **USERNAME = "[USERNAME]"**
