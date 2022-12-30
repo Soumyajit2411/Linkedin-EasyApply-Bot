@@ -6,7 +6,8 @@
 - Install dependencies with `pip3 install -r requirements.txt`
 - Update python with `pip install --upgrade pip `
 - Create a .env file
-**USERNAME = "[USERNAME]"****PASSWORD = "[PASSWORD]"**
+**USERNAME = "[USERNAME]"**
+**PASSWORD = "[PASSWORD]"**
 - Can run this on both chrome and firefox just change line 4 of config.py. 
 - Modify config.py according to your demands.
 - Run `python3 linkedin.py`
