@@ -15,7 +15,7 @@ class LinkedinLogin:
             time.sleep(5)
             driver.find_element(By.XPATH,
                                 "//button[@aria-label='Sign in']").click()
-            time.sleep(10)
+            time.sleep(5)
         except NoSuchElementException:
             print("Path Not Found!")
         except:

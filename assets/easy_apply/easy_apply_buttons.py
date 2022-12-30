@@ -7,7 +7,7 @@ class LinkedinButtons:
 
     def easyApplyButton(self, driver):
         try:
-            time.sleep(3)
+            time.sleep(2)
             button = driver.find_element(
                 By.XPATH, '//button[contains(@class, "jobs-apply-button")]')
             EasyApplyButton = button

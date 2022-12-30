@@ -70,14 +70,14 @@ class Linkedin:
                         ).easyApplyButton(self.driver)
                         if button is not False:
                             button.click()
-                            time.sleep(1)
+                            time.sleep(0.5)
                             countApplied += 1
                             try:
                                 self.driver.find_element(
                                     By.XPATH,
                                     "//button[@aria-label='Submit application']"
                                 ).click()
-                                time.sleep(5)
+                                time.sleep(2)
                                 lineToWrite = jobProperties + " | " + "Just Applied to this job: " + str(
                                     offerPage)
                                 write_results.LinkedinWriteResults(

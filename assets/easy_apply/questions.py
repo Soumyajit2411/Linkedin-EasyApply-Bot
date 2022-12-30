@@ -1,4 +1,4 @@
-import time, config, string
+import time, config
 from selenium.webdriver.common.by import By
 import additional_questions
 from selenium.common.exceptions import NoSuchElementException
@@ -14,7 +14,6 @@ class LinkedinQuestions:
             try:
                 driver.find_element(
                     By.XPATH, "//h3[contains(.,'Additional Questions')]")
-                time.sleep(1)
                 self.radioButtonConfig(driver)
                 self.inputFieldConfig(driver)
                 self.checkboxConfig(driver)
@@ -23,7 +22,6 @@ class LinkedinQuestions:
             try:
                 driver.find_element(By.XPATH,
                                     "//h3[contains(.,'Domande aggiuntive')]")
-                time.sleep(1)
                 self.radioButtonConfig(driver)
                 self.inputFieldConfig(driver)
                 self.checkboxConfig(driver)
@@ -32,7 +30,6 @@ class LinkedinQuestions:
             try:
                 driver.find_element(By.XPATH,
                                     "//h3[contains(.,'Work authorization')]")
-                time.sleep(1)
                 self.workAuthorizationConfig(driver)
             except NoSuchElementException:
                 pass
@@ -42,7 +39,6 @@ class LinkedinQuestions:
         try:
             questions = driver.find_elements(
                 By.XPATH, "//label[@data-test-text-entity-list-form-title='']")
-            time.sleep(1)
             checkboxData = additional_questions.LinkedinAdditionalQuestions(
             ).checkboxConfigData()
             i = 1
@@ -57,6 +53,8 @@ class LinkedinQuestions:
                 d = Select(driver.find_element(By.XPATH, souki))
                 d.select_by_visible_text(str(q))
                 time.sleep(1)
+                d.select_by_index(1)
+                time.sleep(1)
                 i += 1
         except NoSuchElementException:
             pass
@@ -68,7 +66,6 @@ class LinkedinQuestions:
         try:
             questions = driver.find_elements(
                 By.XPATH, "//label[@class='artdeco-text-input--label']")
-            time.sleep(1)
             inputFieldsData = additional_questions.LinkedinAdditionalQuestions(
             ).inputFieldConfigData()
             i = 1
@@ -89,7 +86,7 @@ class LinkedinQuestions:
                             else:
                                 q = inputFieldsData[x]
                     driver.find_element(By.XPATH, souki).send_keys(q)
-                    time.sleep(1)
+                    time.sleep(0.5)
                 i += 1
         except NoSuchElementException:
             pass
@@ -103,7 +100,6 @@ class LinkedinQuestions:
                 By.XPATH,
                 "//legend[@data-test-form-builder-radio-button-form-component__title='true']"
             )
-            time.sleep(1)
             radioButtonData = additional_questions.LinkedinAdditionalQuestions(
             ).radioConfigData()
             i = 1
@@ -120,7 +116,7 @@ class LinkedinQuestions:
                     souki = "(//label[@data-test-text-selectable-option__label='No'])[" + str(
                         i) + "]"
                 driver.find_element(By.XPATH, souki).click()
-                time.sleep(1)
+                time.sleep(0.5)
                 i += 1
         except NoSuchElementException:
             pass
@@ -134,7 +130,7 @@ class LinkedinQuestions:
             else:
                 souki = "//label[@data-test-text-selectable-option__label='No']"
             driver.find_element(By.XPATH, souki).click()
-            time.sleep(1)
+            time.sleep(0.5)
         except NoSuchElementException:
             pass
         except:
