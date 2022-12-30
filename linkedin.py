@@ -99,6 +99,7 @@ class Linkedin:
                                 offerPage)
                             write_results.LinkedinWriteResults(
                             ).displayWriteResults(lineToWrite)
+        self.driver.close()
         return
 
 

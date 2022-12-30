@@ -24,3 +24,5 @@ class LinkedinAlert:
                                     "//span[contains(.,'Alert on')]").click()
         except NoSuchElementException:
             pass
+        except:
+            pass

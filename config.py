@@ -7,10 +7,7 @@ password = config['PASSWORD']
 chromeProfilePath = r""
 
 location = ["India"]
-keywords = [
-    "backend", "react", "software", "javascript", "java", "python",
-    "programming", "rpa"
-]
+keywords = ["backend", "react"]
 experienceLevels = ["Entry level", "Internship"]
 datePosted = ["Past month"]
 jobType = ["Part-time", "Internship", "Temporary"]
