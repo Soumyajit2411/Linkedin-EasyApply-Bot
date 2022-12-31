@@ -10,10 +10,11 @@ def index():
 
 @app.route('/my-link/')
 def my_link():
-    import linkedin
-    print('I got clicked!')
-    file = open(r'linkedin.py', 'r').read()
-    exec(file)
+    try:
+        import linkedin
+        open(r'linkedinn.py', 'r').read()
+    except:
+        return render_template('failure.html')
     return render_template('success.html')
 
 

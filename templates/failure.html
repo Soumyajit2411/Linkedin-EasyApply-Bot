@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename='styles/style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="ui middle aligned center aligned grid">
+        <div class="ui eight wide column">
+          <form class="ui large form">
+            <div class="ui icon negative message">
+              <i class="warning icon"></i>
+              <div class="content">
+                <div class="header">Oops! Something went wrong.</div>
+                <p>While running the Linkedin EasyApply Bot</p>
+              </div>
+            </div>
+
+            <span class="ui large teal submit fluid button">Try again</span>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
