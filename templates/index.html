@@ -1,18 +1,144 @@
-<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bot</title>
+    <link rel="stylesheet" type="text/css" href="css/main-min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename='styles/index.css') }}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="section_1">
+      <nav class="navBar">
+        <div class="logoImage">
+          <a href="#"
+            ><div class="navBarMenuItem">Linkedin EasyApply Bot</div></a
+          >
+        </div>
+        <div class="navBarMenu">
+          <a
+            href="https://soumyajit2411.github.io/Linkedin-EasyApply-Bot/"
+            target="_blank"
+            ><div class="navBarMenuItem">Home</div></a
+          >
+          <a
+            href="https://soumyajit2411.github.io/Linkedin-EasyApply-Bot/"
+            target="_blank"
+            ><div class="navBarMenuItem">Instructions</div></a
+          >
+        </div>
+      </nav>
 
-<head>
-  <title>Linkedin Bot</title>
-  <meta charset="utf-8" />
-</head>
-<body>
-  <h1>Instructions</h1>
-  <h2>
-    <a
-      href="https://soumyajit2411.github.io/Linkedin-EasyApply-Bot/"
-      target="_blank"
-      >Instructions</a
-    >
-  </h2>
-  <h1>Run Linkedin EasyApply Bot</h1>
-  <button><a href="/my-link/">Click me</a></button>
-</body>
+      <header>
+        <h3 class="section_1_heading">Apply to all Linkedin Jobs</h3>
+        <p class="section_1_sub">
+          Save your valuable time by using these simple bot
+        </p>
+        <p class="section_1_sub">and more opportunaties on the way</p>
+      </header>
+      <div class="overlayImage">
+        <img
+          src="https://res.cloudinary.com/shubhi/image/upload/v1480270389/backgroundOverlay_c7vlho.png"
+          alt="overlayImage"
+        />
+      </div>
+
+      <div class="button">
+        <button><a href="/my-link/">Run</a></button>
+      </div>
+    </section>
+
+    <section class="section_2">
+      <div class="section_2_col">
+        <div class="section_2_img">
+          <img
+            src="https://res.cloudinary.com/shubhi/image/upload/v1480270389/chatIcon_uiunjt.png"
+            alt="ChatIcon"
+          />
+          <div class="desc">
+            <h3 class="section_2_heading">Customizable fields</h3>
+            <p class="section_2_sub">
+              Discuss ideas, share files and get feedback from your team with
+              none of the back-and-forth of email. And when you need to have a
+              side conversation, simply start a 1-on-1 chat with your colleague.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section_2_col">
+        <div class="section_2_img">
+          <img
+            src="https://res.cloudinary.com/shubhi/image/upload/v1480270390/syncIcon_kjdkcg.png"
+            alt="SyncIcon"
+          />
+          <div class="desc">
+            <h3 class="section_2_heading">
+              Comfortable with chrome &amp; firefox
+            </h3>
+            <p class="section_2_sub">
+              Take your chats with you. With apps for the desktop (Windows,
+              Mac), the Web &amp; mobiles (iPhone, Android &amp; Windows phone),
+              you can switch devices &amp; pick up right where you left off.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section_2_col">
+        <div class="section_2_img">
+          <img
+            src="https://res.cloudinary.com/shubhi/image/upload/v1480270389/settingIcon_zd1vmn.png"
+            alt="SettingsIcon"
+          />
+          <div class="desc">
+            <h3 class="section_2_heading">Fully Configurable forms</h3>
+            <p class="section_2_sub">
+              Our powerful history search ensures that you'll never forget
+              another conversation again. Search acoss chats, files and
+              contacts.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+    </section>
+
+    <section class="section_5">
+      <header>
+        <h3 class="section_3_5_heading">Run on just About Everything</h3>
+      </header>
+      <span class="section_5_icon display_inline">
+        <img
+          src="https://res.cloudinary.com/shubhi/image/upload/v1480270388/appleLogo_jws6va.png"
+          alt="AppleLogo"
+        />
+        <figcaption>Chrome</figcaption>
+      </span>
+      <span class="section_5_icon display_inline">
+        <img
+          src="https://res.cloudinary.com/shubhi/image/upload/v1480270390/windowsLogo_nsv69g.png"
+          alt="WindowsLogo"
+        />
+        <figcaption>Firefox</figcaption>
+      </span>
+    </section>
+    <div class="clearfix"></div>
+
+    <footer class="footer">
+      <div class="footerText">
+        <p>Copyrights 2013, go.to. All rights reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>
