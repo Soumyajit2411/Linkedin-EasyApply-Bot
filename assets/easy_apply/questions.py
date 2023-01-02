@@ -51,10 +51,12 @@ class LinkedinQuestions:
                 souki = "(//select[@data-test-text-entity-list-form-select=''])[" + str(
                     i) + "]"
                 d = Select(driver.find_element(By.XPATH, souki))
-                d.select_by_visible_text(str(q))
-                time.sleep(1)
+                try:
+                    d.select_by_visible_text(str(q))
+                except:
+                    pass
                 d.select_by_index(1)
-                time.sleep(1)
+                time.sleep(0.5)
                 i += 1
         except NoSuchElementException:
             pass

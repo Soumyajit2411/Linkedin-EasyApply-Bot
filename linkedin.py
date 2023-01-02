@@ -73,11 +73,10 @@ class Linkedin:
                             time.sleep(0.5)
                             countApplied += 1
                             try:
-                                self.driver.find_element(
-                                    By.XPATH,
-                                    "//button[@aria-label='Submit application']"
-                                ).click()
-                                time.sleep(2)
+                                easy_apply_buttons.LinkedinButtons(
+                                ).chooseButtonConfig(self.driver)
+                                easy_apply_buttons.LinkedinButtons(
+                                ).submitButtonConfig(self.driver)
                                 lineToWrite = jobProperties + " | " + "Just Applied to this job: " + str(
                                     offerPage)
                                 write_results.LinkedinWriteResults(
