@@ -57,6 +57,6 @@ class LinkedinButtons:
             driver.find_element(
                 By.XPATH,
                 "//button[@aria-label='Submit application']").click()
-            time.sleep(2)
+            time.sleep(5)
         except NoSuchElementException:
             pass
