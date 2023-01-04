@@ -5,8 +5,11 @@ from typing import List
 def urlToKeywords(url: str) -> List[str]:
     keywordUrl = url[url.index("keywords=") + 9:]
     keyword = keywordUrl[0:keywordUrl.index("&")]
-    locationUrl = url[url.index("location=") + 9:]
-    location = locationUrl[0:locationUrl.index("&")]
+    if "location" in url:
+        locationUrl = url[url.index("location=") + 9:]
+        location = locationUrl[0:locationUrl.index("&")]
+    else:
+        location = "Default"
     return [keyword, location]
 
 

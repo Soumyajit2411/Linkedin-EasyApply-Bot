@@ -15,9 +15,40 @@ class LinkedinUrlGenerate:
 
     def generateUrlLinks(self):
         path = []
-        for location in config.location:
+        if not config.location:
             for keyword in config.keywords:
-                    url = constants.linkJobUrl + "?f_AL=true&keywords=" +keyword+self.jobType()+self.remote()+self.checkJobLocation(location)+self.jobExp()+self.datePosted()+self.salary()+self.sortBy()
+                url = constants.linkJobUrl + "?f_AL=true&keywords=" +keyword
+                if config.jobType != []:
+                    url+=self.jobType()
+                if config.remote != []:
+                    url+=self.remote()
+                if config.experienceLevels != []:
+                    url+=self.jobExp()
+                if config.datePosted != []:
+                    url+=self.datePosted()
+                if config.salary != []:
+                    url+=self.salary()
+                if config.sort != []:
+                    url+=self.sortBy()
+                path.append(url)
+        else:
+            for location in config.location:
+                for keyword in config.keywords:
+                    url = constants.linkJobUrl + "?f_AL=true&keywords=" +keyword
+                    if config.jobType != []:
+                        url+=self.jobType()
+                    if config.remote != []:
+                        url+=self.remote()
+                    if config.location != 0:
+                        url+=self.checkJobLocation(location)
+                    if config.experienceLevels != []:
+                        url+=self.jobExp()
+                    if config.datePosted != []:
+                        url+=self.datePosted()
+                    if config.salary != []:
+                        url+=self.salary()
+                    if config.sort != []:
+                        url+=self.sortBy()
                     path.append(url)
         return path
 

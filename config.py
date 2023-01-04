@@ -1,13 +1,13 @@
 from dotenv import dotenv_values
 
 config = dotenv_values(".env")
-browser = ["firefox"]
+browser = ["chrome"]
 email = config['USERNAME']
 password = config['PASSWORD']
 chromeProfilePath = r""
 
 location = []
-keywords = ["flask", "java", "python", "ruby"]
+keywords = ["frontend", "java", "python", "ruby"]
 experienceLevels = ["Entry level", "Internship"]
 datePosted = ["Past month"]
 jobType = ["Part-time", "Internship", "Temporary"]
