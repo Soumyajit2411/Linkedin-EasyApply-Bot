@@ -127,7 +127,7 @@ class LinkedinQuestions:
 
     def workAuthorizationConfig(self, driver):
         try:
-            if str(config.workAuthorization) == "Yes":
+            if str(config.workAuthorization).lower() == "yes":
                 souki = "//label[@data-test-text-selectable-option__label='Yes']"
             else:
                 souki = "//label[@data-test-text-selectable-option__label='No']"

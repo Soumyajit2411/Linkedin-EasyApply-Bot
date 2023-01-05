@@ -16,7 +16,7 @@ class LinkedinAlert:
 
     def alert(self, driver):
         try:
-            if str(config.alert) in "True":
+            if str(config.alert).lower() in "true":
                 driver.find_element(By.XPATH,
                                     "//span[contains(.,'Set alert')]").click()
             else:

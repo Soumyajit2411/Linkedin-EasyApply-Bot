@@ -1,5 +1,130 @@
-<form action="http://localhost:5000/result" method="POST">
-  <p>Email <input type="email" name="Email" /></p>
-  <p>Password <input type="password" name="Password" /></p>
-  <p><input type="submit" value="submit" /></p>
-</form>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename='js/index.js') }}"
+    />
+  </head>
+  <body>
+    <form action="http://localhost:5000/result" method="POST">
+      <div>
+        <p>Browser <input type="text" name="Browser" /></p>
+        <p>Email <input type="email" name="Email" /></p>
+        <p>Password <input type="password" name="Password" /></p>
+        <p>Keywords <input type="keywords" name="keywords" /></p>
+        <p>
+          Blacklist Companies<input
+            type="blacklistCompanies"
+            name="blacklistCompanies"
+          />
+        </p>
+        <p>
+          Blacklist Titles<input
+            type="blackListTitles"
+            name="blackListTitles"
+          />
+        </p>
+        <p>
+          Blacklist Job Locations<input
+            type="blackListjobLocations"
+            name="blackListjobLocations"
+          />
+        </p>
+        <p>
+          Black Job Location Limit<input
+            type="blackListLimitjobApplications"
+            name="blackListLimitjobApplications"
+          />
+        </p>
+        <p>
+          Follow Companies
+          <input type="followCompanies" name="followCompanies" />
+        </p>
+        <p>Alert <input type="alert" name="alert" /></p>
+        <p>
+          Work Authorization<input
+            type="workAuthorization"
+            name="workAuthorization"
+          />
+        </p>
+        <p>Default Input <input type="defaultInput" name="defaultInput" /></p>
+        <p>Default Check <input type="defaultCheck" name="defaultCheck" /></p>
+        <p>Default Radio <input type="defaultRadio" name="defaultRadio" /></p>
+      </div>
+      <div>
+        <label for="location">Location</label>
+        <select name="location" id="location" multiple>
+          <option value="asia">Asia</option>
+          <option value="europe">Europe</option>
+          <option value="northamerica">North America</option>
+          <option value="southamerica">South America</option>
+          <option value="australia">Australia</option>
+          <option value="africa">Africa</option>
+        </select>
+      </div>
+      <div>
+        <label for="experienceLevels">Experience Location</label>
+        <select name="experienceLevels" id="experienceLevels" multiple>
+          <option value="Internship">Internship</option>
+          <option value="Entry_level">Entry level</option>
+          <option value="Associate">Associate</option>
+          <option value="Mid-Senior_level">Mid-Senior level</option>
+          <option value="Director">Director</option>
+          <option value="Executive">Executive</option>
+        </select>
+      </div>
+      <div>
+        <label for="datePosted">Date Posted</label>
+        <select id="datePosted" name="datePosted" multiple>
+          <option value="Any Time">Any Time</option>
+          <option value="Past Month">Past Month</option>
+          <option value="Past Week">Past Week</option>
+          <option value="Past 24 hours">Mid-Senior level</option>
+        </select>
+      </div>
+      <div>
+        <label for="jobType">JobType</label>
+        <select id="jobType" name="jobType" multiple>
+          <option value="Full-time">Full-time</option>
+          <option value="Part-time">Part-time</option>
+          <option value="Contract">Contract</option>
+          <option value="Temporary">Temporary</option>
+          <option value="Volunteer">Volunteer</option>
+          <option value="Intership">Intership</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div>
+        <label for="remote">Remote</label>
+        <select name="remote" id="remote" multiple>
+          <option value="On-site">On-site</option>
+          <option value="Remote">Remote</option>
+          <option value="Hybrid">Hybrid</option>
+        </select>
+      </div>
+      <div>
+        <label for="salary">Salary</label>
+        <select name="salary" id="salary" multiple>
+          <option value="$40,000+">$40,000+</option>
+          <option value="$60,000+">$60,000+</option>
+          <option value="$80,000+">$80,000+</option>
+          <option value="$100,000+">$100,000+</option>
+          <option value="$120,000+">$120,000+</option>
+          <option value="$140,000+">$140,000+</option>
+          <option value="$160,000+">$160,000+</option>
+          <option value="$180,000+">$180,000+</option>
+          <option value="$200,000+">$200,000+</option>
+        </select>
+      </div>
+      <div>
+        <label for="sort">Remote</label>
+        <select name="sort" id="sort" multiple>
+          <option value="Recent">Recent</option>
+          <option value="Relevent">Relevent</option>
+        </select>
+      </div>
+      <p><input type="submit" value="submit" /></p>
+    </form>
+  </body>
+</html>

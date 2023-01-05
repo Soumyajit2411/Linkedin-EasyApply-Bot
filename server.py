@@ -1,9 +1,8 @@
-from flask import Flask, redirect, render_template, request, session, url_for
+from flask import Flask, redirect, render_template, request
 from typing import List
+import assets.utils as utils
 
 app = Flask(__name__)
-username = ''
-password = ''
 
 
 @app.route('/')
@@ -24,18 +23,9 @@ def student():
 @app.route('/result', methods=['POST', 'GET'])
 def result() -> List[str]:
     if request.method == 'POST':
-        result = request.form
-        username = result["Email"]
-        password = result["Password"]
-        with open("config.py", encoding="utf-8") as file:
-            lines = []
-            for line in file:
-                lines.append(line)
-        url = "email = '" + username + "'\n" + "password = '" + password + "'"
+        config = utils.configs(request.form)
         with open("config.py", 'w', encoding="utf-8") as f:
-            for line in lines:
-                f.write(line)
-            f.write("\n" + url + "\n")
+            f.write(config)
     return redirect('/my-link/')
 
 

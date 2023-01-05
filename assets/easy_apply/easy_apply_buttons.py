@@ -44,7 +44,7 @@ class LinkedinButtons:
 
     def followCompaniesConfig(self, driver):
         try:
-            if str(config.followCompanies) in "False":
+            if str(config.followCompanies).lower() in "false":
                 driver.find_element(
                     By.XPATH,
                     "//label[@for='follow-company-checkbox']").click()

@@ -23,3 +23,42 @@ def jobsToPages(numOfJobs: str):
         if (number_of_pages > 40):
             number_of_pages = 40
     return number_of_pages
+
+
+def configs(request):
+    return "browser = '" + request.get(
+        'Browser') + "'\n" + "email = '" + request.get(
+            'Email') + "'\n" + "password = '" + request.get(
+                'Password') + "'\n" + "keywords = '" + request.get(
+                    'keywords'
+                ) + "'\n" + "blacklistCompanies = '" + request.get(
+                    'blacklistCompanies'
+                ) + "'\n" + "blackListTitles = '" + request.get(
+                    'blackListTitles'
+                ) + "'\n" + "blackListjobLocations = '" + request.get(
+                    'blackListjobLocations'
+                ) + "'\n" + "blackListLimitjobApplications = '" + request.get(
+                    'blackListLimitjobApplications'
+                ) + "'\n" + "followCompanies = '" + request.get(
+                    'followCompanies') + "'\n" + "alert = '" + request.get(
+                        'alert'
+                    ) + "'\n" + "workAuthorization = '" + request.get(
+                        'workAuthorization'
+                    ) + "'\n" + "defaultInput = '" + request.get(
+                        'defaultInput'
+                    ) + "'\n" + "defaultCheck = '" + request.get(
+                        'defaultCheck'
+                    ) + "'\n" + "defaultRadio = '" + request.get(
+                        'defaultRadio') + "'\n" + "location = " + str(
+                            request.getlist('location')
+                        ) + "\n" + "experienceLevels = " + str(
+                            request.getlist('experienceLevels')
+                        ) + "\n" + "datePosted = " + str(
+                            request.getlist('datePosted')
+                        ) + "\n" + "jobType = " + str(
+                            request.getlist('jobType')
+                        ) + "\n" + "remote = " + str(request.getlist(
+                            'remote')) + "\n" + "salary = " + str(
+                                request.getlist(
+                                    'salary')) + "\n" + "sort = " + str(
+                                        request.getlist('sort')) + "\n"
