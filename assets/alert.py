@@ -1,4 +1,4 @@
-import time, config
+import time, downloads.config as config
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 

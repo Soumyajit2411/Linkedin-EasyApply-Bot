@@ -1,4 +1,4 @@
-import constants, config,os
+import constants, downloads.config as config,os
 
 class LinkedinUrlGenerate:
 

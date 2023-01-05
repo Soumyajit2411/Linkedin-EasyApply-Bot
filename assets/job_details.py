@@ -1,4 +1,4 @@
-import config
+import downloads.config as config
 from selenium.webdriver.common.by import By
 
 

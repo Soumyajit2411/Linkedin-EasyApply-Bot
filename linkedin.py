@@ -1,4 +1,4 @@
-import time, constants, config
+import time, constants, downloads.config as config
 import assets.job_details as job_details
 import assets.url.job_url as job_url
 import assets.login as login
