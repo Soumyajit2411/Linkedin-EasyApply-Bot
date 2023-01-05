@@ -26,18 +26,23 @@ def jobsToPages(numOfJobs: str):
 
 
 def configs(request):
+    keywords = stringToKeywords(request.get('keywords'))
+    blacklistCompanies = stringToKeywords(request.get('blacklistCompanies'))
+    blackListTitles = stringToKeywords(request.get('blackListTitles'))
+    blackListjobLocations = stringToKeywords(
+        request.get('blackListjobLocations'))
     return "browser = '" + request.get(
         'Browser') + "'\n" + "email = '" + request.get(
             'Email') + "'\n" + "password = '" + request.get(
-                'Password') + "'\n" + "keywords = '" + request.get(
-                    'keywords'
-                ) + "'\n" + "blacklistCompanies = '" + request.get(
-                    'blacklistCompanies'
-                ) + "'\n" + "blackListTitles = '" + request.get(
-                    'blackListTitles'
-                ) + "'\n" + "blackListjobLocations = '" + request.get(
-                    'blackListjobLocations'
-                ) + "'\n" + "blackListLimitjobApplications = '" + request.get(
+                'Password') + "'\n" + "keywords = " + str(
+                    keywords
+                ) + "\n" + "blacklistCompanies = " + str(
+                    blacklistCompanies
+                ) + "\n" + "blackListTitles = " + str(
+                    blackListTitles
+                ) + "\n" + "blackListjobLocations = " + str(
+                    blackListjobLocations
+                ) + "\n" + "blackListLimitjobApplications = '" + request.get(
                     'blackListLimitjobApplications'
                 ) + "'\n" + "followCompanies = '" + request.get(
                     'followCompanies') + "'\n" + "alert = '" + request.get(
@@ -62,3 +67,8 @@ def configs(request):
                                 request.getlist(
                                     'salary')) + "\n" + "sort = " + str(
                                         request.getlist('sort')) + "\n"
+
+
+def stringToKeywords(url: str) -> List[str]:
+    x = url.split(",")
+    return x

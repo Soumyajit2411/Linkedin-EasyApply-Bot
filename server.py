@@ -24,7 +24,7 @@ def student():
 def result() -> List[str]:
     if request.method == 'POST':
         config = utils.configs(request.form)
-        with open("config.py", 'w', encoding="utf-8") as f:
+        with open("downloads/config.py", 'w', encoding="utf-8") as f:
             f.write(config)
     return redirect('/my-link/')
 
