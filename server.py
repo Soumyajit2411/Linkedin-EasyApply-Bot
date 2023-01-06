@@ -1,3 +1,8 @@
+import sys
+import subprocess
+
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'flask'])
+
 from flask import Flask, redirect, render_template, request
 from typing import List
 import assets.utils as utils
