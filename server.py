@@ -1,3 +1,4 @@
+import os
 import sys
 import subprocess
 
@@ -29,8 +30,13 @@ def student():
 def result() -> List[str]:
     if request.method == 'POST':
         config = utils.configs(request.form)
-        with open("downloads/config.py", 'w', encoding="utf-8") as f:
-            f.write(config)
+        if not os.path.exists('downloads'):
+            os.makedirs('downloads')
+        try:
+            with open("downloads/config.py", 'w', encoding="utf-8") as f:
+                f.write(config)
+        except:
+            print("No Data Provided!")
     return redirect('/my-link/')
 
 
@@ -39,7 +45,8 @@ def my_link():
     try:
         import linkedin
         open(r'linkedin.py', 'r').read()
-    except:
+    except Exception as e:
+        print(e)
         return render_template('failure.html')
     return render_template('success.html')
 
