@@ -189,11 +189,6 @@ var drop = function (info) {
   o.init();
   return o;
 };
-
-var loc = new drop({
-  selector: "#location",
-  preselected: [0],
-});
 var el = new drop({
   selector: "#experienceLevels",
   preselected: [0, 1],
