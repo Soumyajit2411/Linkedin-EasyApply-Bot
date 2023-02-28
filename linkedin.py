@@ -13,6 +13,10 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
+
 
 class Linkedin:
 
@@ -35,7 +39,15 @@ class Linkedin:
         urlData = write_results.LinkedinWriteResults().getUrlDataFile()
         for url in urlData:
             self.driver.get(url)
-            totalJobs = self.driver.find_element(By.XPATH, '//small').text
+            delay = 20
+            totalJobss = []
+            try:
+                totalJobss = WebDriverWait(self.driver, delay).until(
+                    EC.presence_of_element_located((By.XPATH, '//small')))
+            except TimeoutException:
+                print("Loading took too much time!")
+                self.driver.close()
+            totalJobs = totalJobss.text
             totalPages = int(utils.jobsToPages(totalJobs))
             urlWords = utils.urlToKeywords(url)
             lineToWrite = "\n Category: " + urlWords[
