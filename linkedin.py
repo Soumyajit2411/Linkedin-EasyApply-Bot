@@ -11,12 +11,10 @@ import assets.alert as alert
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
-from webdriver_manager.firefox import GeckoDriverManager
 
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
-from selenium.webdriver.firefox.service import Service as FirefoxService
 
 
 class Linkedin:
@@ -26,10 +24,10 @@ class Linkedin:
             if "chrome" in config.browser:
                 self.driver = webdriver.Chrome(ChromeDriverManager().install())
             else:
-                self.driver = webdriver.Firefox(
-                    service=FirefoxService(GeckoDriverManager().install()))
+                self.driver = webdriver.Firefox()
             self.driver.get(constants.home)
-        except Exception:
+        except Exception as e:
+            print(e)
             pass
         login.LinkedinLogin().Login(self.driver)
 
