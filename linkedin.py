@@ -15,6 +15,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
+from webdriver_manager.firefox import GeckoDriverManager
 
 
 class Linkedin:
@@ -24,7 +25,8 @@ class Linkedin:
             if "chrome" in config.browser:
                 self.driver = webdriver.Chrome(ChromeDriverManager().install())
             else:
-                self.driver = webdriver.Firefox()
+                self.driver = webdriver.Firefox(
+                    executable_path=GeckoDriverManager().install())
             self.driver.get(constants.home)
         except Exception as e:
             print(e)
