@@ -1,6 +1,6 @@
 ## Note
 
--Can't run the script for firefox browser now
+- Can't run the script for firefox browser now
 
 ## Instructions Guide 🔌
 
