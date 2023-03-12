@@ -12,6 +12,7 @@ class LinkedinAlert:
         offersPerPage = driver.find_elements(By.XPATH,
                                              '//li[@data-occludable-job-id]')
         self.alert(driver)
+        time.sleep(5)
         return offersPerPage
 
     def alert(self, driver):
