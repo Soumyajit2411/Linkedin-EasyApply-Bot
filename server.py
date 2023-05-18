@@ -1,24 +1,10 @@
 import os
-import sys
-import subprocess
-
-subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'flask'])
 
 from flask import Flask, redirect, render_template, request
 from typing import List
 import assets.utils as utils
 
 app = Flask(__name__)
-
-
-@app.route('/')
-def index():
-    try:
-        import file
-        open(r'file.py', 'r').read()
-    except:
-        return render_template('failure.html')
-    return render_template('index.html')
 
 
 @app.route('/input')
@@ -52,4 +38,4 @@ def my_link():
 
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)
