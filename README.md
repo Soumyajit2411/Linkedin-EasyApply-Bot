@@ -1,7 +1,3 @@
-## Note
-
-- Can't run the script for firefox browser now
-
 ## Instructions Guide 🔌
 
 - Clone this github repository `https://github.com/Soumyajit2411/Linkedin-EasyApply-Bot.git`
